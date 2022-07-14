@@ -1,0 +1,105 @@
+body {
+  background: #eef5ff;
+  display: grid;
+  place-items: center;
+  font-family: "Segoe UI";
+  height: 100vh;
+  overflow: hidden;
+  align-content: center;
+}
+.drop-container {
+  background: #fff;
+  padding: 1.5rem;
+  width: 450px;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: 14px 20px 40px 0px rgb(0 13 255 / 13%);
+  position: relative;
+  margin: 20px;
+}
+.active {
+  border: 3px solid #4b4b4b;
+  background: #edccff;
+}
+
+.drop .icon {
+  font-size: 60px;
+  color: #165cf9;
+}
+
+.drop .text {
+  text-align: center;
+  font-weight: 500;
+  color: #443f46;
+  margin-top: 1rem;
+}
+
+.progressee {
+  background: #efefef;
+  width: inherit;
+  position: absolute;
+  height: 20px;
+  border-radius: 10px;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.progress-block {
+  width: 100%;
+  height: 20px;
+  opacity: 0;
+}
+
+.progress {
+  background: #165cf9;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 999;
+  transition: all cubic-bezier(0.52, 1.28, 0.8, 0) 2s;
+}
+.drop-container:hover .progress {
+  width: calc(100% - 3rem);
+  visibility: visible;
+}
+
+.drop label {
+  background: #165cf9;
+  padding: 0.7rem 1.8rem;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.file-input {
+  display: none;
+}
+
+.line {
+  width: 80px;
+  height: 1px;
+  background: #949494;
+}
+
+.or-con {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.or {
+  margin: 0 1rem;
+  font-weight: 500;
+  color: #443f46;
+}
+
+.drop {
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  border: 2px dashed #ddd;
+  border-radius: 10px;
+}
